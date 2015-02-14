@@ -1,170 +1,247 @@
-<!doctypehtml>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
 <head>
-<style>
-body {
-	background-color: aquamarine;
-}
-#me {
-	font-family: cursive;
-	color: red;
-	border: solid black 2px;
-	border-radius:100%;
-	position: relative;
-	width: 50px;
-	height: 50px;
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>A Simple Responsive HTML Email</title>
+  <style type="text/css">
+  body {margin: 0; padding: 0; min-width: 100%!important;}
+  img {height: auto;}
+  .content {width: 100%; max-width: 600px;}
+  .header {padding: 40px 30px 20px 30px;}
+  .innerpadding {padding: 30px 30px 30px 30px;}
+  .borderbottom {border-bottom: 1px solid #f2eeed;}
+  .subhead {font-size: 15px; color: #ffffff; font-family: sans-serif; letter-spacing: 10px;}
+  .h1, .h2, .bodycopy {color: #153643; font-family: sans-serif;}
+  .h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
+  .h2 {padding: 0 0 15px 0; font-size: 24px; line-height: 28px; font-weight: bold;}
+  .bodycopy {font-size: 16px; line-height: 22px;}
+  .mission {font-size: 16px; line-height: 22px; color: #ffffff;}
+  .button {text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;}
+  .button a {color: #ffffff; text-decoration: none;}
+  .footer {padding: 20px 30px 15px 30px;}
+  .footercopy {font-family: sans-serif; font-size: 14px; color: #ffffff;}
+  .footercopy a {color: #ffffff; text-decoration: underline;}
 
-}
-#jobs {
-	
-}
-.jobs {
-	font-family: cursive;
-	border: solid black 2px;
-	border-radius:15%;
-	position: relative;
-
-}
-
-
-</style>
+  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
+  body[yahoo] .hide {display: none!important;}
+  body[yahoo] .buttonwrapper {background-color: transparent!important;}
+  body[yahoo] .button {padding: 0px!important;}
+  body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
+  body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
+  }
+  </style>
 </head>
-<body>
-<div>
-	<button class="jobs">Learn</button>
-	<ul id="jobs">
-	<li><button class="jobs">Investigator</button>
-		<ul>
-			<li>Study surroundings</li>
-			<li>Learn how to read body language.</li>
-			<li>Go back to school.</li>
-			<li>Develop reasoning skills</li>
-			<li>Get in the habit of taking notes at all times</li>
-			<li>Study psychology</li>
-			<li>Gain better understanding of forensics</li>
-			<li>Keep network alive and healthy</li>
-			<li>Don't settle for convenient answers.</li>
-			<li>Learn to laugh in the face of danger.</li>
-		</ul></li>
-	<li><button class="jobs">Philosopher</button>
-		<ul>
-			<li>Study surroundings</li>
-			<li>Read texts of well-known philosophies.</li>
-			<li>Build arguments that support your ideas.</li>
-			<li>Build arguments that discredit your ideas.</li>
-			<li>Don't cement yourself into a single belief system</li>
-			<li>Get in the habit of taking notes at all times</li>
-			<li>Don't be afraid of making people angry</li>
-			<li>Encourage others to disagree with you</li>
-			<li>Express yourself creatively</li>
-			<li>Learn to build elaborate metaphors</li>
-		</ul></li>	
-	<li><button class="jobs">Inventor</button>
-		<ul>
-			<li>Practice and develop math skills.</li>
-			<li>research patent laws</li>
-			<li>Build workshop</li>
-			<li>Pay attention to everyday processes</li>
-			<li>Go back to school</li>
-			<li>Learn more about elegant design</li>
-			<li>Learn more about marketing</li>	
-			<li>Learn to use AutoCAD</li>
-			<li>Purchase 3d printer</li>
-			<li>Start a business to hold and protect patents</li>
-		</ul></li>	
-	<li><button class="jobs">Artist</button>
-		<ul>
-			<li>Understand your voice.</li>
-			<li>Don't be afraid of making people angry.</li>
-			<li>Study your surroundings.</li>
-			<li>Don't be a slave to a single medium.</li>
-			<li>Understand your own emotional self.</li>
-			<li>Appreciate the emotions of others.</li>
-			<li>Fight to be heard.</li>
-			<li>Don't be needlessly cryptic.</li>
-			<li>Remember that it can be funny and meaningful at the same time.</li>	
-			<li>Understand you can't do something meaningless and call it symbolism. You may fool the sheep but people who are actually intelligent will see right through you</li>
-		</ul></li>	
-	<li><button class="jobs">Writer</button>
-		<ul>
-			<li>Study surroundings</li>
-			<li>Seek out interesting situations.</li>
-			<li>Practice spelling and grammar.</li>
-			<li>Go back to school</li>
-			<li>Challenge the perspective of yourself and others.</li>
-			<li>understand your voice.</li>
-			<li>Experiment with different voices.</li>
-			<li>Get in the habit of taking notes at all times.</li>
-			<li>Don't be afraid of making people angry.</li>
-			<li>Write everyday.</li>	
-		</ul></li>	
-	<li><button class="jobs">Blacksmith</button>
-		<ul>
-			<li>Build Workshop.</li>
-			<li>Buy coal furnace.</li>
-			<li>Buy anvil.</li>
-			<li>Buy crucible.</li>
-			<li>Read relevant trade books.</li>
-			<li>Learn how to make alloys from base metals.</li>
-			<li>Make additional tools.</li>
-			<li>Make metal molds.</li>
-			<li>Strive for 10,000 hours.</li>
-			<li>Learn how to treat burns.</li>	
-		</ul></li>	
-	<li><button class="jobs">Engineer</button>
-		<ul>
-			<li>Practice and develop math skills.</li>
-			<li>Get in the habit of taking notes at all times.</li>
-			<li>Research fields of study.</li>
-			<li>Go back to school.</li>
-			<li>Buy Simulation programs.</li>
-			<li>Fight for a job against everyone else who got an engineering degree just because "I like science and math and stuff" </li>
-			<li>Try and decide if this is what you really want to do.</li>
-			<li>Go Back to school again.</li>
-			<li>Work as general Engineer.</li>
-			<li>Look into computer engineering.</li>
-		</ul></li>	
-	<li><button class="jobs">Editor</button>
-		<ul>
-			<li>Study Significant films</li>
-			<li>Work with super 8mm film to gain understanding of editing practices.</li>
-			<li>Get in the habit of taking notes at all times.</li>
-			<li>Don't be afraid to say things people won't like.</li>
-			<li>Make people uncomfortable</li>
-			<li>Make people laugh</li>
-			<li>Shoot everything around to play with image juxtaposition.</li>
-			<li>Get an account with shutter fly and build a narrative or music video using stock footage</li>
-			<li>understand your voice</li>
-			<li>Get used to being in a small room with by yourself for 15+ hours a day.</li>
-		</ul></li>	
-	<li><button class="jobs">Mentor</button>
-		<ul>
-			<li>Be willing to share skills and knowledge.</li>
-			<li>Have a positive attitude.</li>
-			<li>Take personal interest in others.</li>
-			<li>Show professional enthusiasm.</li>
-			<li>Give value to ongoing learning and growth.</li>
-			<li>Reach level of respect from your peers.</li>
-			<li>Provide constructive feedback.</li>
-			<li>Constantly set and reach your own personal goals.</li>
-			<li>Motivate.</li>
-			<li>Value the opinions of others.</li>	
-		</ul></li>	
-	<li><button class="jobs">Father</button>
-		<ul>
-			<li>Teach her what you can.</li>
-			<li>Be there when she needs you.</li>
-			<li>Inspire her.</li>
-			<li>Keep her safe.</li>
-			<li>Keep letting her down to a minimum.</li>
-			<li>Encourage the search for knowledge.</li>
-			<li>Encourage creative expression</li>
-			<li>Don't judge her even when she makes choices you wouldn't.</li>
-			<li>Teach her not to worry about what other people think.</li>
-			<li>Take the time to know her.</li>	
-		</ul></li>	
-	</ul>
-</div>
+<body yahoo bgcolor="#f6f8f1">
+<!--start wrapper-->
+<table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td>   
+    <!--Main Tabble-->
+    <table bgcolor="#ffffff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+      
 
+      <!--top section-->
+      <tr>
+        <td bgcolor="#043f67" class="header"><!-- color of first row-->
+          <table width="540" align="center" border="0" cellpadding="0" cellspacing="0">  
+            <tr>
+              <td height="0" style="padding: 0 0 0 0;">
+                <img class="fix" src="banner.jpg" width="540" height="219" border="0" alt="" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!--end of top section-->
+
+      <!--start of who we are-->
+      <tr>
+        <td class="innerpadding borderbottom" bgcolor="#0f72ab">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="h2">
+              </td>
+            </tr>
+            <tr>
+              <td class="mission" >
+                ALLIANCE LABS empowers agencies to increase margins
+                by lowering the cost of digital content production with
+                competitively-priced onshore digital communications services.
+                Professionally trained and mentored low-income young
+                adults provide these services and earn a living wage striving
+                to master the technology and design skills needed to
+                significantly impact their lives and future.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!--end of who we are-->
+      <tr>
+        <td>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                   <img class="fix" src="footer.jpg" width="100%" border="0" alt="" />
+                  </td>
+                </tr>
+               <tr>
+                 <td>
+                    <a href="Http:www.creativepros.org"><img src="thealiancelabsurl.jpg"></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </td>
+      </tr>
+      
+
+      <!--star of partners-->
+      <tr>
+        <td class="innerpadding borderbottom"  >
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <!--start of section title-->
+            <tr>
+              <td class="h2">
+              OUR PARTNERS
+              </td>
+            </tr>
+            <!--end of section title-->
+
+
+
+
+            <!--start of partner list-->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="70" style="padding: 0 20px 20px 0;">
+                            <img class="fix" src="acp.gif" width="70" height="70" border="0" alt="" />
+                          </td>
+                          <td>
+                            <b>THE ALLIANCE OF CREATIVE PROFESSIONALS</b>
+                            <br><em>Administration, Business Development and Account Management</em>
+                            <br>ACP manages the business development, day-to-day administration and account management,
+                            serving as point-of-contact for all clients and partners.
+                            <br>&nbsp;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="70" style="padding: 0 20px 20px 0;">
+                            <img class="fix" src="icon.gif" width="70" height="70" border="0" alt="" />
+                          </td>
+                          <td>
+                            <b>BIG SHOULDERS MEDIA</b>
+                            <br><em>Project Management</em>
+                            <br>Helmed by author and interactive/UX innovator Andrew Hicks, BSM will help manage the day-to-day
+                            project management and client deliverables.
+                            <br>&nbsp;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="70" style="padding: 0 20px 20px 0;">
+                            <img class="fix" src="caxy.png" width="70" height="70" border="0" alt="" />
+                          </td>
+                          <td>
+                            <b>CAXY INTERACTIVE</b>
+                            <br><em>Mentorship and Best Practices</em>
+                            <br>A leader in technical creative development, Caxy provides professional best practices for advanced
+                            technical development, and leads the ‘mentor-to-hire’ process.
+                            <br>&nbsp;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="70" style="padding: 0 20px 20px 0;">
+                            <img class="fix" src="icstars.jpg" width="70" height="70" border="0" alt="" />
+                          </td>
+                          <td>
+                            <b>IC STARS</b>
+                            <br><em>Candidate Recruitment and Selection</em>
+                            <br>Recruits and helps select high quality talent. IC Stars also recruits for technical aptitude and provides the basic
+                                skills needed for entry-level web development through their highly regarded 4 month training intensive.
+                                <br>&nbsp;
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="70" style="padding: 0 20px 20px 0;">
+                            <img class="fix" src="barnstar.gif" width="70" height="70" border="0" alt="" />
+                          </td>
+                          <td>
+                            <b>BARN STAR VENTURES</b>
+                            <br><em>Project and Technical Processes</em>
+                            <br>A leader in technical entrepreneurship as well as marketing best practices, BarnStar’s leadership will establish
+                            project management best practices and technical processes to guarantee product and production quality.
+                            <br>&nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!--end of list-->
+          </table>
+        </td>
+      </tr>
+      <!--end of parters-->
+
+
+
+
+
+
+
+
+      
+
+
+      <tr>
+        <td class="footer" bgcolor="#043f67">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center" class="footercopy">
+                &reg; Someone, somewhere 2013<br/>
+                <a href="#" class="unsubscribe"><font color="#ffffff">Unsubscribe</font></a> 
+                <span class="hide">from this newsletter instantly</span>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 20px 0 0 0;">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                      <a href="http://www.facebook.com/">
+                        <img src="facebook.png" width="37" height="37" alt="Facebook" border="0" />
+                      </a>
+                    </td>
+                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                      <a href="http://www.twitter.com/">
+                        <img src="twitter.png" width="37" height="37" alt="Twitter" border="0" />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+    </table>
+    <!--end of main table-->
+    </td>
+  </tr>
+</table>
+<!--end of wrapper-->
 </body>
 </html>
